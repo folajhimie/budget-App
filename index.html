@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App 🐱‍👤</title>
+    <link rel="stylesheet" href="demo/styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="app/chart.js" defer></script>
+    <script src="app/scripts.js" defer></script>
+</head>
+<body>
+    <div class="budget-container">
+        <div class="budget-title">
+            <p class="header-name">Folajimi<span>Budget APP</span></p>
+        </div>
+        <div class="budget-header">
+            <div class="balance"> 
+                <div class="account"> Balance </div>
+                <div class="value" style="font-size: 25px;">
+                    <span>$<small>2000</small></span>
+                </div>
+            </div>
+            <div class="budget-sheet">
+                <div class="incomes">
+                    <div class="income-title"> Income </div>
+                    <div class="income-value">
+                        <span>$<small>500</small></span>
+                    </div>
+                </div>
+                <div class="chart"></div>
+                <div class="expenses">
+                    <div class="expenses-title"> Outcome </div>
+                    <div class="expenses-value">
+                        <span>$<small>100</small></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="budget-dashboard">
+            <div class="dash-title">DashBoard</div>
+            <div class="dash-toggle">
+                <div class="dash-tab1"> Expenses </div>
+                <div class="dash-tab2 active"> Income </div>
+                <div class="dash-tab3"> All </div>
+            </div>
+            <div class="hide" id="expense">
+                <ul class="list"></ul>
+                <div class="input">
+                    <input type="text" id="expense-text" placeholder="Title">
+                    <input type="text" id="expense-amount" placeholder="$0">
+                    <div class="add-expense"> <img src="icon/add.png" alt=""></div>
+                </div>
+            </div>
+            <div class="back" id="income">
+                <ul class="list">
+                    <li id="0" class="income">
+                        <!-- <div class="entry"> Salary: $8000 </div>
+                        <div id="edit" class="edit"><img src="icon/edit.png" alt="edit" ></div>
+                        <div id="delete" class="delete" > <img src="icon/delete.png" alt="delete"></div> -->
+                    </li>
+                </ul>
+                <div class="input">
+                    <input type="text" id="input-text" placeholder="Title">
+                    <input type="text" id="input-amount" placeholder="$0">
+                    <!-- <i class="fa fa-plus-square" id="icons" style="color: rgb(183, 0, 255);"></i> -->
+                    <div class="add-income"> <img src="icon/add.png" alt=""></div>
+                </div>
+            </div>
+            <div class="hide" id="all">
+                <ul class="list"></ul>
+                <div class="inputs"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
